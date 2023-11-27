@@ -19,7 +19,7 @@ params:
   title: Blog by Josh Lin
   description: "My personal blog"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: Josh Lin
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -74,8 +74,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Jiexu (Josh) Lin | 林捷栩"
-    Content: Keen interest in web development
+    Title: "Jiexu (Josh) Lin"
+    Content: Keen interest in software development
 
   socialIcons:
     - name: linkedin
@@ -113,20 +113,29 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # necessary for search page
 menu:
   main:
     - identifier: posts
-      name: posts
+      name: Posts
       url: /posts/
       weight: 10
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: archive
+      name: Archive
+      url: /archive/
       weight: 30
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
     # - identifier: joshlin
     #   name: joshlin.me
     #   url: https://joshlin.me
