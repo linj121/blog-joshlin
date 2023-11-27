@@ -13,7 +13,7 @@ Root and other users, except the default Ubuntu user on Tencent Cloud, are unabl
 
 CPU utilization at 100%.
 
-![CPU Utilization](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/362a690e-7ae8-47cd-9c16-ecc412af89c9/Untitled.png)
+![CPU Utilization](/images/cpu-util.png)
 
 - Used `kill -9 2724` to terminate the process.
 - Found implanted programs in /var/tmp/.x and /var/tmp/.xrx.

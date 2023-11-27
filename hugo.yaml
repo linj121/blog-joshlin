@@ -27,7 +27,7 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -74,14 +74,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there, my name is Josh Lin \U0001F44B"
+    Title: "Jiexu (Josh) Lin | 林捷栩"
     Content: Keen interest in web development
 
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/jiexulin/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/linj121/"
 
@@ -115,18 +115,22 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 10
     - identifier: categories
       name: categories
       url: /categories/
-      weight: 10
+      weight: 30
     - identifier: tags
       name: tags
       url: /tags/
       weight: 20
-    - identifier: joshlin
-      name: joshlin.me
-      url: https://joshlin.me
-      weight: 30
+    # - identifier: joshlin
+    #   name: joshlin.me
+    #   url: https://joshlin.me
+    #   weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
