@@ -1,5 +1,5 @@
 +++
-title = 'My Ubuntu server was hacked!'
+title = 'My Ubuntu Server Was Hacked!'
 date = 2023-07-15T04:36:12-05:00
 draft = false
 +++

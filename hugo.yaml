@@ -58,32 +58,34 @@ params:
 
   # profile-mode
   profileMode:
-      enabled: false
-      title:  # optional default will be site title
-      subtitle: "This is subtitle"
-      imageUrl: "static/speed.jpg" # optional
-      imageTitle: "i show speed" # optional
+      enabled: true
+      title: "Josh Lin" # optional default will be site title
+      subtitle: "Full-stack Web Developer"
+      imageUrl: "/images/josh.jpg" # optional
+      imageTitle: "profile picture" # optional
       imageWidth: 120 # custom size
       imageHeight: 120 # custom size
       buttons:
-          - name: Archive
-            url: "/archive"
+          - name: Posts
+            url: "/posts"
+          # - name: Archive
+          #   url: "/archive"
           - name: Github
-            url: "https://github.com/"
+            url: "https://github.com/linj121"
 
 
   # home-info mode
   homeInfoParams:
-    Title: "Jiexu (Josh) Lin"
+    Title: "Josh Lin"
     Content: Keen interest in software development
 
   socialIcons:
+    - name: github
+      url: "https://github.com/linj121/"
     - name: linkedin
       url: "https://www.linkedin.com/in/jiexulin/"
     # - name: stackoverflow
     #   url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/linj121/"
 
   analytics:
     google:
